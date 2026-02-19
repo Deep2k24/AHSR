@@ -10,18 +10,16 @@ def generate_launch_description():
     pkg_share = get_package_share_directory(pkg_name)
 
     # 1. World File Path
-    # Points to your custom hospital world
     world_path = os.path.join(pkg_share, 'worlds', 'hospital.sdf')
 
     # 2. Xacro File Path
     xacro_file = os.path.join(pkg_share, 'urdf', 'shopmate_bot.xacro')
-    # Process Xacro
     robot_desc = os.popen(f'xacro {xacro_file}').read()
 
-    # 3. Environment Variable (Fixes missing texture errors)
-    ign_resource_path = SetEnvironmentVariable(
-        name='IGN_GAZEBO_RESOURCE_PATH',
-        value=[os.environ.get('IGN_GAZEBO_RESOURCE_PATH', '') + ':' + pkg_share]
+    # 3. Environment Variable (UPDATED FOR JAZZY/HARMONIC)
+    gz_resource_path = SetEnvironmentVariable(
+        name='GZ_SIM_RESOURCE_PATH',
+        value=[os.environ.get('GZ_SIM_RESOURCE_PATH', '') + ':' + pkg_share]
     )
 
     # 4. Robot State Publisher
@@ -34,18 +32,16 @@ def generate_launch_description():
                     {'robot_description': robot_desc}],
     )
 
-    # 5. Launch Gazebo (with hospital world)
+    # 5. Launch Gazebo 
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(get_package_share_directory('ros_gz_sim'), 
                          'launch', 'gz_sim.launch.py')
         ),
-        # Passing the world path to Gazebo
         launch_arguments={'gz_args': f'-r -v4 {world_path}'}.items(),
     )
 
     # 6. Spawn the Robot
-    # Placed at 0,0 but lifted 5cm (0.05) to prevent physics clipping
     create_entity = Node(
         package='ros_gz_sim',
         executable='create',
@@ -59,23 +55,23 @@ def generate_launch_description():
                    '-Y', '0.0']
     )
 
-    # 7. Bridge ROS <-> Ignition
+    # 7. Bridge ROS <-> Gazebo Harmonic (UPDATED FOR JAZZY/HARMONIC)
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[
-            '/cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist',
-            '/odom@nav_msgs/msg/Odometry@ignition.msgs.Odometry',
-            '/scan@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan',
-            '/tf@tf2_msgs/msg/TFMessage@ignition.msgs.Pose_V',
-            '/joint_states@sensor_msgs/msg/JointState@ignition.msgs.Model',
-            '/clock@rosgraph_msgs/msg/Clock@ignition.msgs.Clock'
+            '/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
+            '/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry',
+            '/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
+            '/tf@tf2_msgs/msg/TFMessage@gz.msgs.Pose_V',
+            '/joint_states@sensor_msgs/msg/JointState@gz.msgs.Model',
+            '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock'
         ],
         output='screen'
     )
 
     return LaunchDescription([
-        ign_resource_path,
+        gz_resource_path,
         gazebo,
         robot_state_publisher,
         create_entity,

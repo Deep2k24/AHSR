@@ -998,7 +998,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>file:///home/deep/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/office chair/1/meshes/officechair.dae</uri>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/office chair/1/files/meshes/officechair.dae</uri>
             </mesh>
           </geometry>
         </visual>
@@ -1041,7 +1041,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>file:///home/deep/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/office chair/1/meshes/officechair.dae</uri>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/office%20chair/1/files/meshes/officechair.dae</uri>
             </mesh>
           </geometry>
         </visual>
@@ -2380,14 +2380,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>file:///home/deep/.ignition/fuel/fuel.gazebosim.org/ldowns/models/salad_on_a_plate/1/meshes/model.obj</uri>
+              <uri>https://fuel.gazebosim.org/1.0/ldowns/models/salad_on_a_plate/1/files/meshes/model.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision_0'>
           <geometry>
             <mesh>
-              <uri>file:///home/deep/.ignition/fuel/fuel.gazebosim.org/ldowns/models/salad_on_a_plate/1/meshes/model.obj</uri>
+              <uri>https://fuel.gazebosim.org/1.0/ldowns/models/salad_on_a_plate/1/files/meshes/model.obj</uri>
             </mesh>
           </geometry>
         </collision>
@@ -2415,14 +2415,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>file:///home/deep/.ignition/fuel/fuel.gazebosim.org/ldowns/models/salad_on_a_plate/1/meshes/model.obj</uri>
+              <uri>https://fuel.gazebosim.org/1.0/ldowns/models/salad_on_a_plate/1/files/meshes/model.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision_0'>
           <geometry>
             <mesh>
-              <uri>file:///home/deep/.ignition/fuel/fuel.gazebosim.org/ldowns/models/salad_on_a_plate/1/meshes/model.obj</uri>
+              <uri>https://fuel.gazebosim.org/1.0/ldowns/models/salad_on_a_plate/1/files/meshes/model.obj</uri>
             </mesh>
           </geometry>
         </collision>

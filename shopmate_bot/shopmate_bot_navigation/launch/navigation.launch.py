@@ -6,15 +6,11 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 def generate_launch_description():
-    # 1. Get Directories
     pkg_shopmate_nav = get_package_share_directory('shopmate_bot_navigation')
 
-    # 2. Define File Paths
-    # Make sure these match your actual file names!
     default_map_path = os.path.join(pkg_shopmate_nav, 'maps', 'hospital_map.yaml')
     nav2_params_path = os.path.join(pkg_shopmate_nav, 'config', 'nav2_params.yaml')
 
-    # 3. Declare Arguments (so you can change map/params from command line if needed)
     map_yaml_cmd = DeclareLaunchArgument(
         'map',
         default_value=default_map_path,
@@ -25,9 +21,9 @@ def generate_launch_description():
         default_value=nav2_params_path,
         description='Full path to the ROS2 parameters file to use for all launched nodes')
 
-    # 4. Define Nodes
-    
-    # Map Server
+    # Common parameters for all nodes
+    configured_params = [LaunchConfiguration('params_file'), {'use_sim_time': True}]
+
     map_server_node = Node(
         package='nav2_map_server',
         executable='map_server',
@@ -38,62 +34,50 @@ def generate_launch_description():
                     {'use_sim_time': True}]
     )
 
-    # AMCL (Localization)
     amcl_node = Node(
         package='nav2_amcl',
         executable='amcl',
         name='amcl',
         output='screen',
-        parameters=[LaunchConfiguration('params_file'),
-                    {'use_sim_time': True}]
+        parameters=configured_params
     )
 
-    # Controller (Local Planner)
     controller_server_node = Node(
         package='nav2_controller',
         executable='controller_server',
         name='controller_server',
         output='screen',
-        parameters=[LaunchConfiguration('params_file'),
-                    {'use_sim_time': True}]
+        parameters=configured_params
     )
 
-    # Planner (Global Planner)
     planner_server_node = Node(
         package='nav2_planner',
         executable='planner_server',
         name='planner_server',
         output='screen',
-        parameters=[LaunchConfiguration('params_file'),
-                    {'use_sim_time': True}]
+        parameters=configured_params
     )
 
-    # Behavior Server (Recoveries like Spin/Backup)
     behavior_server_node = Node(
         package='nav2_behaviors',
         executable='behavior_server',
         name='behavior_server',
         output='screen',
-        parameters=[LaunchConfiguration('params_file'),
-                    {'use_sim_time': True}]
+        parameters=configured_params
     )
 
-    # BT Navigator (The Brain)
     bt_navigator_node = Node(
         package='nav2_bt_navigator',
         executable='bt_navigator',
         name='bt_navigator',
         output='screen',
-        parameters=[LaunchConfiguration('params_file'),
-                    {'use_sim_time': True}]
+        parameters=configured_params
     )
 
-    # Lifecycle Manager
-    # This acts as the "Trigger Terminal" - it automatically configures and activates nodes in order.
     lifecycle_manager_node = Node(
         package='nav2_lifecycle_manager',
         executable='lifecycle_manager',
-        name='lifecycle_manager_navigation',
+        name='lifecycle_manager', # Cleaned up name
         output='screen',
         parameters=[
             {'use_sim_time': True},
@@ -107,7 +91,6 @@ def generate_launch_description():
         ]
     )
 
-    # 5. Build Launch Description
     return LaunchDescription([
         map_yaml_cmd,
         params_file_cmd,
