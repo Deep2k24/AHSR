@@ -2,6 +2,7 @@
 #include <nav_msgs/msg/odometry.hpp>
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <tf2_ros/transform_broadcaster.h>
+#include <geometry_msgs/msg/twist.hpp>
 
 #include <fcntl.h>
 #include <termios.h>
@@ -17,6 +18,7 @@ public:
   {
     odom_pub_ = create_publisher<nav_msgs::msg::Odometry>("/odom", 10);
     tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
+    cmd_sub_ = create_subscription<geometry_msgs::msg::Twist>("/cmd_vel", 10,std::bind(&WheelOdomNode::cmdCallback, this, std::placeholders::_1));
 
     wheel_radius_ = 0.0575;
     wheel_separation_ = 0.45;
@@ -44,6 +46,7 @@ private:
 
   rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub_;
   std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+  rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_sub_;
   rclcpp::TimerBase::SharedPtr timer_;
 
   void openSerial()
@@ -171,6 +174,38 @@ void processLine(const std::string & line)
 
     tf_broadcaster_->sendTransform(tf);
   }
+
+  void cmdCallback(const geometry_msgs::msg::Twist::SharedPtr msg)
+{
+  double linear = msg->linear.x;      // m/s
+  double angular = msg->angular.z;   // rad/s
+
+  // Differential drive inverse kinematics
+  double v_left  = linear - (angular * wheel_separation_ / 2.0);
+  double v_right = linear + (angular * wheel_separation_ / 2.0);
+
+  // Convert linear velocity to wheel angular velocity
+  double w_left  = v_left / wheel_radius_;
+  double w_right = v_right / wheel_radius_;
+
+  // Motor limits
+  double max_wheel_rad_s = 10.47;   // 100 RPM motor
+
+  // Normalize to PWM range (-255 to 255)
+  int left_pwm  = static_cast<int>((w_left  / max_wheel_rad_s) * 255.0);
+  int right_pwm = static_cast<int>((w_right / max_wheel_rad_s) * 255.0);
+
+  // Clamp values
+  left_pwm  = std::max(-255, std::min(255, left_pwm));
+  right_pwm = std::max(-255, std::min(255, right_pwm));
+
+  // Send to Arduino
+  std::stringstream ss;
+  ss << "CMD:" << left_pwm << "," << right_pwm << "\n";
+
+  std::string cmd = ss.str();
+  write(serial_fd_, cmd.c_str(), cmd.size());
+}
 };
 
 int main(int argc, char * argv[])

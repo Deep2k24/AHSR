@@ -43,17 +43,32 @@ void setup() {
 // ---------------- LOOP ----------------
 void loop() {
 
-  // Run motors slowly for testing
-  analogWrite(L_PWM, 80);
-  analogWrite(R_PWM, 80);
+  // Check if velocity command received
+  if (Serial.available()) {
 
-  // Send ONLY ticks in simple format
+    String data = Serial.readStringUntil('\n');
+
+    if (data.startsWith("CMD:")) {
+
+      int commaIndex = data.indexOf(',');
+      float leftPWM = data.substring(4, commaIndex).toFloat();
+      float rightPWM = data.substring(commaIndex + 1).toFloat();
+
+      digitalWrite(L_DIR, leftPWM >= 0 ? HIGH : LOW);
+      digitalWrite(R_DIR, rightPWM >= 0 ? HIGH : LOW);
+
+      analogWrite(L_PWM, abs(leftPWM));
+      analogWrite(R_PWM, abs(rightPWM));
+    }
+  }
+
+  // Send encoder data
   Serial.print("ENC:");
   Serial.print(leftTicks);
   Serial.print(",");
   Serial.println(rightTicks);
 
-  delay(50);   // 20Hz update rate
+  delay(20);
 }
 
 
