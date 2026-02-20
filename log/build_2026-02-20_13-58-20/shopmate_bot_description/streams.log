@@ -1,0 +1,56 @@
+[1.083s] Invoking command in '/home/alok/AHSR/shopmate_bot/shopmate_bot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alok/AHSR/build/shopmate_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shopmate_bot_description build --build-base /home/alok/AHSR/build/shopmate_bot_description/build install --record /home/alok/AHSR/build/shopmate_bot_description/install.log --single-version-externally-managed install_data
+[1.827s] running egg_info
+[1.827s] creating ../../build/shopmate_bot_description/shopmate_bot_description.egg-info
+[1.866s] writing ../../build/shopmate_bot_description/shopmate_bot_description.egg-info/PKG-INFO
+[1.866s] writing dependency_links to ../../build/shopmate_bot_description/shopmate_bot_description.egg-info/dependency_links.txt
+[1.866s] writing requirements to ../../build/shopmate_bot_description/shopmate_bot_description.egg-info/requires.txt
+[1.867s] writing top-level names to ../../build/shopmate_bot_description/shopmate_bot_description.egg-info/top_level.txt
+[1.867s] writing manifest file '../../build/shopmate_bot_description/shopmate_bot_description.egg-info/SOURCES.txt'
+[1.959s] reading manifest file '../../build/shopmate_bot_description/shopmate_bot_description.egg-info/SOURCES.txt'
+[1.964s] writing manifest file '../../build/shopmate_bot_description/shopmate_bot_description.egg-info/SOURCES.txt'
+[1.964s] running build
+[1.964s] running build_py
+[1.965s] creating /home/alok/AHSR/build/shopmate_bot_description/build
+[1.965s] creating /home/alok/AHSR/build/shopmate_bot_description/build/lib
+[1.965s] creating /home/alok/AHSR/build/shopmate_bot_description/build/lib/shopmate_bot_description
+[1.965s] copying shopmate_bot_description/__init__.py -> /home/alok/AHSR/build/shopmate_bot_description/build/lib/shopmate_bot_description
+[1.965s] running install
+[1.992s] running install_lib
+[2.061s] creating /home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages/shopmate_bot_description
+[2.061s] copying /home/alok/AHSR/build/shopmate_bot_description/build/lib/shopmate_bot_description/__init__.py -> /home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages/shopmate_bot_description
+[2.065s] byte-compiling /home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages/shopmate_bot_description/__init__.py to __init__.cpython-312.pyc
+[2.065s] running install_data
+[2.065s] creating /home/alok/AHSR/install/shopmate_bot_description/share/ament_index
+[2.065s] creating /home/alok/AHSR/install/shopmate_bot_description/share/ament_index/resource_index
+[2.065s] creating /home/alok/AHSR/install/shopmate_bot_description/share/ament_index/resource_index/packages
+[2.066s] copying resource/shopmate_bot_description -> /home/alok/AHSR/install/shopmate_bot_description/share/ament_index/resource_index/packages
+[2.066s] copying package.xml -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description
+[2.066s] creating /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/launch
+[2.066s] copying launch/display.launch.py -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/launch
+[2.066s] copying launch/gazebo.launch.py -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/launch
+[2.067s] creating /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+[2.067s] copying urdf/shopmate_bot.xacro -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+[2.067s] copying urdf/shopmate_bot.urdf.xacro -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+[2.067s] copying urdf/shopmate_bot.urdf -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+[2.067s] copying urdf/materials.xacro -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+[2.074s] copying urdf/bridge_config.yaml -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+[2.074s] copying urdf/shopmate_bot.trans -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+[2.074s] creating /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+[2.074s] copying meshes/left_wheel_link_1.stl -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+[2.075s] copying meshes/caster_front_1.stl -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+[2.075s] copying meshes/caster_rear_1.stl -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+[2.075s] copying meshes/base_link.stl -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+[2.075s] copying meshes/lidar_link_1.stl -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+[2.075s] copying meshes/right_wheel_link_1.stl -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+[2.075s] creating /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/config
+[2.075s] copying config/shopmate_bot_controllers.yaml -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/config
+[2.076s] copying config/display.rviz -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/config
+[2.076s] creating /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/worlds
+[2.076s] copying worlds/hospital.sdf -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/worlds
+[2.076s] creating /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/rviz
+[2.076s] copying rviz/nav_view.rviz -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/rviz
+[2.077s] running install_egg_info
+[2.153s] Copying ../../build/shopmate_bot_description/shopmate_bot_description.egg-info to /home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages/shopmate_bot_description-0.0.0-py3.12.egg-info
+[2.157s] running install_scripts
+[2.485s] writing list of installed files to '/home/alok/AHSR/build/shopmate_bot_description/install.log'
+[2.617s] Invoked command in '/home/alok/AHSR/shopmate_bot/shopmate_bot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alok/AHSR/build/shopmate_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shopmate_bot_description build --build-base /home/alok/AHSR/build/shopmate_bot_description/build install --record /home/alok/AHSR/build/shopmate_bot_description/install.log --single-version-externally-managed install_data

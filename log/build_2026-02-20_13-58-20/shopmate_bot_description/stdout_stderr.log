@@ -1,0 +1,54 @@
+running egg_info
+creating ../../build/shopmate_bot_description/shopmate_bot_description.egg-info
+writing ../../build/shopmate_bot_description/shopmate_bot_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/shopmate_bot_description/shopmate_bot_description.egg-info/dependency_links.txt
+writing requirements to ../../build/shopmate_bot_description/shopmate_bot_description.egg-info/requires.txt
+writing top-level names to ../../build/shopmate_bot_description/shopmate_bot_description.egg-info/top_level.txt
+writing manifest file '../../build/shopmate_bot_description/shopmate_bot_description.egg-info/SOURCES.txt'
+reading manifest file '../../build/shopmate_bot_description/shopmate_bot_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/shopmate_bot_description/shopmate_bot_description.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/alok/AHSR/build/shopmate_bot_description/build
+creating /home/alok/AHSR/build/shopmate_bot_description/build/lib
+creating /home/alok/AHSR/build/shopmate_bot_description/build/lib/shopmate_bot_description
+copying shopmate_bot_description/__init__.py -> /home/alok/AHSR/build/shopmate_bot_description/build/lib/shopmate_bot_description
+running install
+running install_lib
+creating /home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages/shopmate_bot_description
+copying /home/alok/AHSR/build/shopmate_bot_description/build/lib/shopmate_bot_description/__init__.py -> /home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages/shopmate_bot_description
+byte-compiling /home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages/shopmate_bot_description/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/alok/AHSR/install/shopmate_bot_description/share/ament_index
+creating /home/alok/AHSR/install/shopmate_bot_description/share/ament_index/resource_index
+creating /home/alok/AHSR/install/shopmate_bot_description/share/ament_index/resource_index/packages
+copying resource/shopmate_bot_description -> /home/alok/AHSR/install/shopmate_bot_description/share/ament_index/resource_index/packages
+copying package.xml -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description
+creating /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/launch
+copying launch/display.launch.py -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/launch
+copying launch/gazebo.launch.py -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/launch
+creating /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+copying urdf/shopmate_bot.xacro -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+copying urdf/shopmate_bot.urdf.xacro -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+copying urdf/shopmate_bot.urdf -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+copying urdf/materials.xacro -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+copying urdf/bridge_config.yaml -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+copying urdf/shopmate_bot.trans -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/urdf
+creating /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+copying meshes/left_wheel_link_1.stl -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+copying meshes/caster_front_1.stl -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+copying meshes/caster_rear_1.stl -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+copying meshes/base_link.stl -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+copying meshes/lidar_link_1.stl -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+copying meshes/right_wheel_link_1.stl -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/meshes
+creating /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/config
+copying config/shopmate_bot_controllers.yaml -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/config
+copying config/display.rviz -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/config
+creating /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/worlds
+copying worlds/hospital.sdf -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/worlds
+creating /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/rviz
+copying rviz/nav_view.rviz -> /home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/rviz
+running install_egg_info
+Copying ../../build/shopmate_bot_description/shopmate_bot_description.egg-info to /home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages/shopmate_bot_description-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/alok/AHSR/build/shopmate_bot_description/install.log'

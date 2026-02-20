@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/wheel_odom_node.dir/src/wheel_odom_cpp.cpp.o[0m
+[100%] [32m[1mLinking CXX executable wheel_odom_node[0m
+[100%] Built target wheel_odom_node
+-- Install configuration: ""
+-- Installing: /home/alok/AHSR/install/wheel_odom_cpp/lib/wheel_odom_cpp/wheel_odom_node
+-- Set non-toolchain portion of runtime path of "/home/alok/AHSR/install/wheel_odom_cpp/lib/wheel_odom_cpp/wheel_odom_node" to ""
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/ament_index/resource_index/package_run_dependencies/wheel_odom_cpp
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/ament_index/resource_index/parent_prefix_path/wheel_odom_cpp
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/environment/ament_prefix_path.sh
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/environment/path.sh
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/environment/path.dsv
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/local_setup.bash
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/local_setup.sh
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/local_setup.zsh
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/local_setup.dsv
+-- Installing: /home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/package.dsv
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/ament_index/resource_index/packages/wheel_odom_cpp
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/cmake/wheel_odom_cppConfig.cmake
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/cmake/wheel_odom_cppConfig-version.cmake
+-- Up-to-date: /home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/package.xml

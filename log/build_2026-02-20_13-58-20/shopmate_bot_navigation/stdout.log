@@ -1,0 +1,38 @@
+running egg_info
+creating ../../build/shopmate_bot_navigation/shopmate_bot_navigation.egg-info
+writing ../../build/shopmate_bot_navigation/shopmate_bot_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/shopmate_bot_navigation/shopmate_bot_navigation.egg-info/dependency_links.txt
+writing requirements to ../../build/shopmate_bot_navigation/shopmate_bot_navigation.egg-info/requires.txt
+writing top-level names to ../../build/shopmate_bot_navigation/shopmate_bot_navigation.egg-info/top_level.txt
+writing manifest file '../../build/shopmate_bot_navigation/shopmate_bot_navigation.egg-info/SOURCES.txt'
+reading manifest file '../../build/shopmate_bot_navigation/shopmate_bot_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/shopmate_bot_navigation/shopmate_bot_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/alok/AHSR/build/shopmate_bot_navigation/build
+creating /home/alok/AHSR/build/shopmate_bot_navigation/build/lib
+creating /home/alok/AHSR/build/shopmate_bot_navigation/build/lib/shopmate_bot_navigation
+copying shopmate_bot_navigation/__init__.py -> /home/alok/AHSR/build/shopmate_bot_navigation/build/lib/shopmate_bot_navigation
+running install
+running install_lib
+creating /home/alok/AHSR/install/shopmate_bot_navigation/lib/python3.12/site-packages/shopmate_bot_navigation
+copying /home/alok/AHSR/build/shopmate_bot_navigation/build/lib/shopmate_bot_navigation/__init__.py -> /home/alok/AHSR/install/shopmate_bot_navigation/lib/python3.12/site-packages/shopmate_bot_navigation
+byte-compiling /home/alok/AHSR/install/shopmate_bot_navigation/lib/python3.12/site-packages/shopmate_bot_navigation/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/alok/AHSR/install/shopmate_bot_navigation/share/ament_index
+creating /home/alok/AHSR/install/shopmate_bot_navigation/share/ament_index/resource_index
+creating /home/alok/AHSR/install/shopmate_bot_navigation/share/ament_index/resource_index/packages
+copying resource/shopmate_bot_navigation -> /home/alok/AHSR/install/shopmate_bot_navigation/share/ament_index/resource_index/packages
+copying package.xml -> /home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation
+creating /home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/launch
+copying launch/navigation.launch.py -> /home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/launch
+copying launch/slam.launch.py -> /home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/launch
+creating /home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/config
+copying config/nav2_params.yaml -> /home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/config
+creating /home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/maps
+copying maps/hospital_map.yaml -> /home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/maps
+copying maps/hospital_map.pgm -> /home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/maps
+running install_egg_info
+Copying ../../build/shopmate_bot_navigation/shopmate_bot_navigation.egg-info to /home/alok/AHSR/install/shopmate_bot_navigation/lib/python3.12/site-packages/shopmate_bot_navigation-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/alok/AHSR/build/shopmate_bot_navigation/install.log'

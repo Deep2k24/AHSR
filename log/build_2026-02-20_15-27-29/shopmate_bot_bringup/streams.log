@@ -1,0 +1,19 @@
+[2.186s] Invoking command in '/home/alok/AHSR/shopmate_bot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alok/AHSR/build/shopmate_bot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alok/AHSR/install/shopmate_bot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/shopmate_bot_bringup build --build-base /home/alok/AHSR/build/shopmate_bot_bringup/build install --record /home/alok/AHSR/build/shopmate_bot_bringup/install.log --single-version-externally-managed install_data
+[2.637s] running egg_info
+[2.672s] writing ../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info/PKG-INFO
+[2.672s] writing dependency_links to ../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info/dependency_links.txt
+[2.672s] writing requirements to ../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info/requires.txt
+[2.673s] writing top-level names to ../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info/top_level.txt
+[2.743s] reading manifest file '../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info/SOURCES.txt'
+[2.744s] writing manifest file '../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info/SOURCES.txt'
+[2.745s] running build
+[2.745s] running build_py
+[2.745s] running install
+[2.755s] running install_lib
+[2.791s] running install_data
+[2.791s] running install_egg_info
+[2.828s] removing '/home/alok/AHSR/install/shopmate_bot_bringup/lib/python3.12/site-packages/shopmate_bot_bringup-0.0.0-py3.12.egg-info' (and everything under it)
+[2.828s] Copying ../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info to /home/alok/AHSR/install/shopmate_bot_bringup/lib/python3.12/site-packages/shopmate_bot_bringup-0.0.0-py3.12.egg-info
+[2.830s] running install_scripts
+[3.057s] writing list of installed files to '/home/alok/AHSR/build/shopmate_bot_bringup/install.log'
+[3.098s] Invoked command in '/home/alok/AHSR/shopmate_bot_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alok/AHSR/build/shopmate_bot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alok/AHSR/install/shopmate_bot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/shopmate_bot_bringup build --build-base /home/alok/AHSR/build/shopmate_bot_bringup/build install --record /home/alok/AHSR/build/shopmate_bot_bringup/install.log --single-version-externally-managed install_data

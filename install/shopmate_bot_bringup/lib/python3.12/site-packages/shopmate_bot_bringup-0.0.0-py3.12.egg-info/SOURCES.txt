@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info/PKG-INFO
+../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info/SOURCES.txt
+../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info/dependency_links.txt
+../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info/requires.txt
+../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info/top_level.txt
+../build/shopmate_bot_bringup/shopmate_bot_bringup.egg-info/zip-safe
+launch/real_robot.launch.py
+resource/shopmate_bot_bringup
+shopmate_bot_bringup/__init__.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

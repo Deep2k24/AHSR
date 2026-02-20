@@ -1,0 +1,372 @@
+[0.084s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.084s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7424b9694ec0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7424b9615280>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7424b9615280>>, mixin_verb=('build',))
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.115s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/alok/AHSR'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extension 'ros'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extensions ['cmake', 'python']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extension 'cmake'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extension 'python'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extensions ['python_setup_py']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(Electronic_firmware) by extension 'python_setup_py'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extension 'ignore_ament_install'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extensions ['colcon_pkg']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extension 'colcon_pkg'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extensions ['colcon_meta']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extension 'colcon_meta'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extensions ['ros']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extension 'ros'
+[0.138s] DEBUG:colcon.colcon_core.package_identification:Package 'rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extension 'ros'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extensions ['cmake', 'python']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extension 'cmake'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extension 'python'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extensions ['python_setup_py']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot) by extension 'python_setup_py'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_description) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_description) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_description) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_description) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_description) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_description) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_description) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_description) by extension 'ros'
+[0.139s] DEBUG:colcon.colcon_core.package_identification:Package 'shopmate_bot/shopmate_bot_description' with type 'ros.ament_python' and name 'shopmate_bot_description'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_navigation) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_navigation) by extension 'ignore_ament_install'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_navigation) by extensions ['colcon_pkg']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_navigation) by extension 'colcon_pkg'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_navigation) by extensions ['colcon_meta']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_navigation) by extension 'colcon_meta'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_navigation) by extensions ['ros']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot/shopmate_bot_navigation) by extension 'ros'
+[0.140s] DEBUG:colcon.colcon_core.package_identification:Package 'shopmate_bot/shopmate_bot_navigation' with type 'ros.ament_python' and name 'shopmate_bot_navigation'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot_bringup) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot_bringup) by extension 'ignore_ament_install'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot_bringup) by extensions ['colcon_pkg']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot_bringup) by extension 'colcon_pkg'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot_bringup) by extensions ['colcon_meta']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot_bringup) by extension 'colcon_meta'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot_bringup) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(shopmate_bot_bringup) by extension 'ros'
+[0.141s] DEBUG:colcon.colcon_core.package_identification:Package 'shopmate_bot_bringup' with type 'ros.ament_python' and name 'shopmate_bot_bringup'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(wheel_odom_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(wheel_odom_cpp) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(wheel_odom_cpp) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(wheel_odom_cpp) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(wheel_odom_cpp) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(wheel_odom_cpp) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(wheel_odom_cpp) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(wheel_odom_cpp) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(wheel_odom_cpp) by extension 'ros'
+[0.142s] DEBUG:colcon.colcon_core.package_identification:Package 'wheel_odom_cpp' with type 'ros.ament_cmake' and name 'wheel_odom_cpp'
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.157s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 339 installed packages in /opt/ros/jazzy
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.196s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alok/AHSR/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alok/AHSR/install/rplidar_ros', 'merge_install': False, 'path': '/home/alok/AHSR/rplidar_ros', 'symlink_install': False, 'test_result_base': None}
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.196s] DEBUG:colcon.colcon_core.verb:Building package 'shopmate_bot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alok/AHSR/build/shopmate_bot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alok/AHSR/install/shopmate_bot_bringup', 'merge_install': False, 'path': '/home/alok/AHSR/shopmate_bot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_description' build argument 'cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_description' build argument 'cmake_target' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.197s] DEBUG:colcon.colcon_core.verb:Building package 'shopmate_bot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alok/AHSR/build/shopmate_bot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alok/AHSR/install/shopmate_bot_description', 'merge_install': False, 'path': '/home/alok/AHSR/shopmate_bot/shopmate_bot_description', 'symlink_install': False, 'test_result_base': None}
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_navigation' build argument 'cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_navigation' build argument 'cmake_target' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'shopmate_bot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.197s] DEBUG:colcon.colcon_core.verb:Building package 'shopmate_bot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alok/AHSR/build/shopmate_bot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alok/AHSR/install/shopmate_bot_navigation', 'merge_install': False, 'path': '/home/alok/AHSR/shopmate_bot/shopmate_bot_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'wheel_odom_cpp' build argument 'cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'wheel_odom_cpp' build argument 'cmake_target' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'wheel_odom_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'wheel_odom_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'wheel_odom_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'wheel_odom_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'wheel_odom_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'wheel_odom_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'wheel_odom_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.197s] DEBUG:colcon.colcon_core.verb:Building package 'wheel_odom_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alok/AHSR/build/wheel_odom_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alok/AHSR/install/wheel_odom_cpp', 'merge_install': False, 'path': '/home/alok/AHSR/wheel_odom_cpp', 'symlink_install': False, 'test_result_base': None}
+[0.197s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.198s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.198s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alok/AHSR/rplidar_ros' with build type 'ament_cmake'
+[0.198s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alok/AHSR/rplidar_ros'
+[0.200s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.200s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.200s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.203s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/alok/AHSR/shopmate_bot_bringup' with build type 'ament_python'
+[0.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('shopmate_bot_bringup', 'ament_prefix_path')
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/shopmate_bot_bringup/share/shopmate_bot_bringup/hook/ament_prefix_path.ps1'
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alok/AHSR/install/shopmate_bot_bringup/share/shopmate_bot_bringup/hook/ament_prefix_path.dsv'
+[0.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/shopmate_bot_bringup/share/shopmate_bot_bringup/hook/ament_prefix_path.sh'
+[0.204s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.204s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.206s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/alok/AHSR/shopmate_bot/shopmate_bot_description' with build type 'ament_python'
+[0.206s] Level 1:colcon.colcon_core.shell:create_environment_hook('shopmate_bot_description', 'ament_prefix_path')
+[0.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/hook/ament_prefix_path.ps1'
+[0.207s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/hook/ament_prefix_path.dsv'
+[0.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/hook/ament_prefix_path.sh'
+[0.208s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.208s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.210s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/alok/AHSR/shopmate_bot/shopmate_bot_navigation' with build type 'ament_python'
+[0.210s] Level 1:colcon.colcon_core.shell:create_environment_hook('shopmate_bot_navigation', 'ament_prefix_path')
+[0.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/hook/ament_prefix_path.ps1'
+[0.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/hook/ament_prefix_path.dsv'
+[0.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/hook/ament_prefix_path.sh'
+[0.211s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.211s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.213s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alok/AHSR/wheel_odom_cpp' with build type 'ament_cmake'
+[0.213s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alok/AHSR/wheel_odom_cpp'
+[0.213s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.213s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.218s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alok/AHSR/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alok/AHSR/rplidar_ros -DCMAKE_INSTALL_PREFIX=/home/alok/AHSR/install/rplidar_ros
+[0.386s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/alok/AHSR/shopmate_bot_bringup'
+[0.386s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.386s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.555s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/alok/AHSR/shopmate_bot/shopmate_bot_description'
+[0.555s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.555s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.724s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/alok/AHSR/shopmate_bot/shopmate_bot_navigation'
+[0.725s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.725s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alok/AHSR/build/wheel_odom_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alok/AHSR/wheel_odom_cpp -DCMAKE_INSTALL_PREFIX=/home/alok/AHSR/install/wheel_odom_cpp
+[1.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alok/AHSR/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alok/AHSR/rplidar_ros -DCMAKE_INSTALL_PREFIX=/home/alok/AHSR/install/rplidar_ros
+[1.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alok/AHSR/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/alok/AHSR/build/rplidar_ros -- -j16 -l16
+[1.257s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alok/AHSR/shopmate_bot/shopmate_bot_navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alok/AHSR/build/shopmate_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alok/AHSR/install/shopmate_bot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shopmate_bot_navigation build --build-base /home/alok/AHSR/build/shopmate_bot_navigation/build install --record /home/alok/AHSR/build/shopmate_bot_navigation/install.log --single-version-externally-managed install_data
+[1.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alok/AHSR/shopmate_bot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alok/AHSR/build/shopmate_bot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alok/AHSR/install/shopmate_bot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/shopmate_bot_bringup build --build-base /home/alok/AHSR/build/shopmate_bot_bringup/build install --record /home/alok/AHSR/build/shopmate_bot_bringup/install.log --single-version-externally-managed install_data
+[1.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alok/AHSR/shopmate_bot/shopmate_bot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alok/AHSR/build/shopmate_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shopmate_bot_description build --build-base /home/alok/AHSR/build/shopmate_bot_description/build install --record /home/alok/AHSR/build/shopmate_bot_description/install.log --single-version-externally-managed install_data
+[2.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alok/AHSR/shopmate_bot/shopmate_bot_navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alok/AHSR/build/shopmate_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alok/AHSR/install/shopmate_bot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shopmate_bot_navigation build --build-base /home/alok/AHSR/build/shopmate_bot_navigation/build install --record /home/alok/AHSR/build/shopmate_bot_navigation/install.log --single-version-externally-managed install_data
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_navigation' for CMake module files
+[2.356s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_navigation' for CMake config files
+[2.357s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_navigation/lib'
+[2.358s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_navigation/bin'
+[2.358s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_navigation/lib/pkgconfig/shopmate_bot_navigation.pc'
+[2.358s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_navigation/lib/python3.12/site-packages'
+[2.358s] Level 1:colcon.colcon_core.shell:create_environment_hook('shopmate_bot_navigation', 'pythonpath')
+[2.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/hook/pythonpath.ps1'
+[2.363s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/hook/pythonpath.dsv'
+[2.364s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/hook/pythonpath.sh'
+[2.365s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_navigation/bin'
+[2.365s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(shopmate_bot_navigation)
+[2.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/package.ps1'
+[2.367s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/package.dsv'
+[2.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/package.sh'
+[2.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/package.bash'
+[2.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/shopmate_bot_navigation/share/shopmate_bot_navigation/package.zsh'
+[2.376s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alok/AHSR/install/shopmate_bot_navigation/share/colcon-core/packages/shopmate_bot_navigation)
+[2.480s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_bringup' for CMake module files
+[2.481s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_bringup' for CMake config files
+[2.482s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_bringup/lib'
+[2.482s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_bringup/bin'
+[2.482s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_bringup/lib/pkgconfig/shopmate_bot_bringup.pc'
+[2.483s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_bringup/lib/python3.12/site-packages'
+[2.483s] Level 1:colcon.colcon_core.shell:create_environment_hook('shopmate_bot_bringup', 'pythonpath')
+[2.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/shopmate_bot_bringup/share/shopmate_bot_bringup/hook/pythonpath.ps1'
+[2.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alok/AHSR/shopmate_bot_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alok/AHSR/build/shopmate_bot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alok/AHSR/install/shopmate_bot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/shopmate_bot_bringup build --build-base /home/alok/AHSR/build/shopmate_bot_bringup/build install --record /home/alok/AHSR/build/shopmate_bot_bringup/install.log --single-version-externally-managed install_data
+[2.488s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alok/AHSR/install/shopmate_bot_bringup/share/shopmate_bot_bringup/hook/pythonpath.dsv'
+[2.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/shopmate_bot_bringup/share/shopmate_bot_bringup/hook/pythonpath.sh'
+[2.489s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_bringup/bin'
+[2.489s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(shopmate_bot_bringup)
+[2.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/shopmate_bot_bringup/share/shopmate_bot_bringup/package.ps1'
+[2.497s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alok/AHSR/install/shopmate_bot_bringup/share/shopmate_bot_bringup/package.dsv'
+[2.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/shopmate_bot_bringup/share/shopmate_bot_bringup/package.sh'
+[2.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/shopmate_bot_bringup/share/shopmate_bot_bringup/package.bash'
+[2.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/shopmate_bot_bringup/share/shopmate_bot_bringup/package.zsh'
+[2.499s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alok/AHSR/install/shopmate_bot_bringup/share/colcon-core/packages/shopmate_bot_bringup)
+[2.800s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alok/AHSR/build/wheel_odom_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alok/AHSR/wheel_odom_cpp -DCMAKE_INSTALL_PREFIX=/home/alok/AHSR/install/wheel_odom_cpp
+[2.801s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alok/AHSR/build/wheel_odom_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/alok/AHSR/build/wheel_odom_cpp -- -j16 -l16
+[2.814s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_description' for CMake module files
+[2.815s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_description' for CMake config files
+[2.816s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_description/lib'
+[2.816s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_description/bin'
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_description/lib/pkgconfig/shopmate_bot_description.pc'
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages'
+[2.820s] Level 1:colcon.colcon_core.shell:create_environment_hook('shopmate_bot_description', 'pythonpath')
+[2.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/hook/pythonpath.ps1'
+[2.822s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/hook/pythonpath.dsv'
+[2.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/hook/pythonpath.sh'
+[2.823s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alok/AHSR/shopmate_bot/shopmate_bot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alok/AHSR/build/shopmate_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alok/AHSR/install/shopmate_bot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shopmate_bot_description build --build-base /home/alok/AHSR/build/shopmate_bot_description/build install --record /home/alok/AHSR/build/shopmate_bot_description/install.log --single-version-externally-managed install_data
+[2.828s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/shopmate_bot_description/bin'
+[2.828s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(shopmate_bot_description)
+[2.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/package.ps1'
+[2.836s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/package.dsv'
+[2.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/package.sh'
+[2.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/package.bash'
+[2.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/shopmate_bot_description/share/shopmate_bot_description/package.zsh'
+[2.839s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alok/AHSR/install/shopmate_bot_description/share/colcon-core/packages/shopmate_bot_description)
+[7.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alok/AHSR/build/wheel_odom_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/alok/AHSR/build/wheel_odom_cpp -- -j16 -l16
+[7.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alok/AHSR/build/wheel_odom_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/alok/AHSR/build/wheel_odom_cpp
+[7.958s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wheel_odom_cpp)
+[7.958s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp' for CMake module files
+[7.958s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alok/AHSR/build/wheel_odom_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/alok/AHSR/build/wheel_odom_cpp
+[7.959s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp' for CMake config files
+[7.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('wheel_odom_cpp', 'cmake_prefix_path')
+[7.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/hook/cmake_prefix_path.ps1'
+[7.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/hook/cmake_prefix_path.dsv'
+[7.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/hook/cmake_prefix_path.sh'
+[7.960s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp/lib'
+[7.960s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp/bin'
+[7.960s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp/lib/pkgconfig/wheel_odom_cpp.pc'
+[7.960s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp/lib/python3.12/site-packages'
+[7.960s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp/bin'
+[7.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/package.ps1'
+[7.961s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/package.dsv'
+[7.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/package.sh'
+[7.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/package.bash'
+[7.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/package.zsh'
+[7.962s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alok/AHSR/install/wheel_odom_cpp/share/colcon-core/packages/wheel_odom_cpp)
+[7.962s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wheel_odom_cpp)
+[7.962s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp' for CMake module files
+[7.963s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp' for CMake config files
+[7.963s] Level 1:colcon.colcon_core.shell:create_environment_hook('wheel_odom_cpp', 'cmake_prefix_path')
+[7.963s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/hook/cmake_prefix_path.ps1'
+[7.963s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/hook/cmake_prefix_path.dsv'
+[7.963s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/hook/cmake_prefix_path.sh'
+[7.964s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp/lib'
+[7.964s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp/bin'
+[7.964s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp/lib/pkgconfig/wheel_odom_cpp.pc'
+[7.964s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp/lib/python3.12/site-packages'
+[7.964s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/wheel_odom_cpp/bin'
+[7.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/package.ps1'
+[7.965s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/package.dsv'
+[7.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/package.sh'
+[7.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/package.bash'
+[7.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/wheel_odom_cpp/share/wheel_odom_cpp/package.zsh'
+[7.966s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alok/AHSR/install/wheel_odom_cpp/share/colcon-core/packages/wheel_odom_cpp)
+[8.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alok/AHSR/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/alok/AHSR/build/rplidar_ros -- -j16 -l16
+[8.772s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alok/AHSR/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/alok/AHSR/build/rplidar_ros
+[8.793s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[8.794s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros' for CMake module files
+[8.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alok/AHSR/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/alok/AHSR/build/rplidar_ros
+[8.794s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros' for CMake config files
+[8.794s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[8.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[8.795s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[8.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[8.796s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros/lib'
+[8.796s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros/bin'
+[8.796s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[8.796s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros/lib/python3.12/site-packages'
+[8.796s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros/bin'
+[8.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[8.797s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[8.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/package.sh'
+[8.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/package.bash'
+[8.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[8.798s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alok/AHSR/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[8.798s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[8.798s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros' for CMake module files
+[8.799s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros' for CMake config files
+[8.799s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[8.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[8.799s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[8.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[8.800s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros/lib'
+[8.800s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros/bin'
+[8.800s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[8.800s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros/lib/python3.12/site-packages'
+[8.800s] Level 1:colcon.colcon_core.environment:checking '/home/alok/AHSR/install/rplidar_ros/bin'
+[8.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[8.801s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[8.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/package.sh'
+[8.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/package.bash'
+[8.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/alok/AHSR/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[8.802s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alok/AHSR/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[8.802s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.803s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.803s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.803s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.812s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.812s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.812s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.823s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.823s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alok/AHSR/install/local_setup.ps1'
+[8.823s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alok/AHSR/install/_local_setup_util_ps1.py'
+[8.824s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alok/AHSR/install/setup.ps1'
+[8.825s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alok/AHSR/install/local_setup.sh'
+[8.825s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alok/AHSR/install/_local_setup_util_sh.py'
+[8.825s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alok/AHSR/install/setup.sh'
+[8.826s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alok/AHSR/install/local_setup.bash'
+[8.826s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alok/AHSR/install/setup.bash'
+[8.827s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alok/AHSR/install/local_setup.zsh'
+[8.827s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alok/AHSR/install/setup.zsh'
